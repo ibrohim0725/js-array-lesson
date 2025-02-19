@@ -252,3 +252,61 @@ console.log(sum);
 
 let mass = [1, 2, 3, 4, 5];
 console.log(mass.toString());
+
+// 22-Topshiriq
+// Elementlarni vergul bilan birlashtirish
+// Massiv elementlarini vergul bilan ajratilgan ko‘rinishda chiqaring (join).
+let mass1 = ["olma", "nok", "tarvuz", "olcha"];
+let res = mass1.join(", ");
+console.log(res);
+
+// 23-Topshiriq
+// Massivning faqat ma’lum qismini olish
+// Massivning 3-6 indekslar orasidagi qismini ajrating (splice).
+let mass2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+mass2.splice(3, 3);
+console.log(mass2);
+
+// 24-Topshiriq
+// O‘rtadagi barcha elementlarni o‘chirish
+// Berilgan massivning o‘rtasidagi barcha elementlarni o‘chirib tashlang (splice).
+let mass3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let ind = Math.floor(mass3.length / 2) - 2;
+mass3.splice(ind, 4);
+console.log(mass3);
+
+// 25-Topshiriq
+// Har bir elementga 2 qo‘shish
+// Har bir elementga 2 qo‘shib, yangilangan massivni hosil qiling (for).
+let massNum = [12, 54, 8, 65, 32, 2, 1, 36, 2552];
+for (let i = 0; i < massNum.length; i++) {
+  massNum[i] += 2;
+}
+console.log(massNum);
+
+// 26-Topshiriq
+// Musbat va manfiy sonlarni ajratish
+// Berilgan sonlar massivida musbat va manfiy sonlarni alohida massivlarga ajrating (for).
+let numbers = [12, 15, -8, -95, 92, -39, -18, 72, 38, 68, -52, 41];
+let musbat = [];
+let manfiy = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    musbat.push(numbers[i]);
+  }
+  if (numbers[i] < 0) {
+    manfiy.push(numbers[i]);
+  }
+}
+console.log(musbat);
+console.log(manfiy);
+
+// 27-Topshiriq
+// Elementlarni kvadratga oshirish
+// Berilgan massivning har bir elementini kvadratga oshiring (for).
+let massNum1 = [12, 54, 8, 65, 32, 2, 13, 36, 52];
+let sum1=1;
+for (let i = 0; i < massNum1.length; i++) {
+ sum1=  massNum1[i] ** 2;
+ console.log(sum1);
+}
