@@ -305,8 +305,63 @@ console.log(manfiy);
 // Elementlarni kvadratga oshirish
 // Berilgan massivning har bir elementini kvadratga oshiring (for).
 let massNum1 = [12, 54, 8, 65, 32, 2, 13, 36, 52];
-let sum1=1;
+let sum1 = 1;
 for (let i = 0; i < massNum1.length; i++) {
- sum1=  massNum1[i] ** 2;
- console.log(sum1);
+  sum1 = massNum1[i] ** 2;
+  console.log(sum1);
 }
+
+// 29-Topshiriq
+// Teskari tartibda chiqarish
+// Massiv elementlarini teskari tartibda ekranga chiqaring (for).
+let mass4 = [1, 2, 3, 4, 5];
+for (let i = 0; i < mass4.length - 1; i++) {
+  console.log(mass4);
+}
+
+// 30-Topshiriq
+// Elementlarni indeks bilan chiqarish
+// Har bir elementni uning indeks raqami bilan ekranga chiqaring (for).
+let mass6 = [1, 2, 3, 4, 5];
+for (let i = 0; i < mass6.length; i++) {
+  console.log(i, mass6[i]);
+}
+
+// Qo‘shimcha amaliyotlar (split, concat)
+
+// 31-Topshiriq
+// Massivdan faqat musbat elementlarni ajratib olish
+// Yangi massiv hosil qilib, faqat musbat elementlarni saqlang (for).
+let masMus = [1, 2, -6, -15, 15, 25, 84, 48, -62, -54];
+let newMas = [];
+for (let i = 0; i < masMus.length; i++) {
+  if (masMus[i] > 0) {
+    newMas.push(masMus[i]);
+  }
+}
+console.log(newMas);
+
+// 36-Topshiriq
+// Ikki massivni ketma-ket birlashtirish
+// Ikki massivni birlashtirib, yangi massiv hosil qiling (concat).
+let mas1 = ["hello world"];
+let mas2 = ["bye world"];
+let res1 = mas1.concat(...mas2);
+console.log(res1);
+
+// 37-Topshiriq
+// Har bir elementni ikkiga bo‘lish
+// Har bir elementni 2 ga bo‘lib, natijani yangi massivga yozing (for).
+let mas3 = [12, 32, 65, 99, 54, 21, 51];
+let mas4 = [];
+for (let i = 0; i < mas3.length; i++) {
+  mas4.push(mas3[i] / 2);
+}
+console.log(mas4);
+
+// 40-Topshiriq
+// Massiv elementlarini satrga aylantirib, bo‘sh joy bilan ajratish
+// Massiv elementlarini bo‘sh joy bilan ajratilgan holda stringga o‘tkazing (join).
+let numberString = [1, 2, 3, 4, 5];
+let res4 = numberString.join("  ");
+console.log(res4);
